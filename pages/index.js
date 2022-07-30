@@ -1,10 +1,9 @@
 import { useQuery } from "@apollo/client";
 import recommendedProfilesQuery from '../queries/recommendedProfilesQuery.js';
-import Profile from '../components/profile.js';
+import Profile from '../components/Profile.js';
 
 export default function Home() {
   const {loading, error, data} = useQuery(recommendedProfilesQuery);
-  console.log(recommendedProfilesQuery);
 
   if (loading) return 'Loading..';
   if (error) return `Error! ${error.message}`;
