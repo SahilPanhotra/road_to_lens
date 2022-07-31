@@ -1,5 +1,5 @@
 import { useQuery } from "@apollo/client";
-import recommendedProfilesQuery from '../pages/queries/recommendedProfilesQuery.js';
+import recommendedProfilesQuery from '../queries/recommendedProfilesQuery.js';
 import Profile from '../pages/components/Profile.js';
 
 export default function Home() {
